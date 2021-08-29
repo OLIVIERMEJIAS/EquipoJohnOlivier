@@ -6,14 +6,16 @@
 
 
 .main{
-    width: 95vw;
+    width: 70vw;
     margin: auto;
-    border: 1px solid black;
     display: grid;
     gap: 10px;
     min-width: 300px;
     max-width: 350px;
 
+}
+.main__heading,.main__heading2{
+    text-align: center;
 }
 
 
@@ -43,7 +45,6 @@
 
 .interaccion__btnSumar,.interaccion__btnDividir, .interaccion__btnMultip{
     color: red;
-    border: 0;
     margin: auto;
 }
 
@@ -51,9 +52,7 @@
     width: 100px;
 }
 
-.main__heading{
-    text-align: center;
-}
+
 
 /*Creando estilo para desktop*/
 
@@ -61,12 +60,49 @@
  .main{
     max-width: 60%;
  }
+
+ .main{
+     grid-template-areas: "main__heading main__heading main__heading"
+     "main__heading2 main__heading2 main__heading2"
+     "sumar dividir multiplicar"
+     "sumar dividir multiplicar"
+     "sumar dividir multiplicar"
+     "footer footer footer";
+ }
+
+ .main__heading{
+     grid-area: main__heading;
+ }
+
+ .main__heading2{
+     grid-area: main__heading2;
+     text-align: center;
+ }
+
+.interaccion__resultadoSumar,.interaccion__resultadoDividir,.interaccion__resultadoMultip{
+    margin: auto;
 }
-/* .main{
-    background-color: aqua;
-} */
-@media(min-width:600px){
-    .main{
-        width: 70%;
-    }
-}
+ 
+ .operacion,.inputData{
+     display: grid;
+     
+ }
+ 
+
+ .sumar{
+     grid-area: sumar;
+ }
+
+ .dividir{
+     grid-area: dividir;
+ }
+
+ .multiplicar{
+     grid-area: multiplicar;
+ }
+
+ .footer{
+     grid-area: footer;
+ }
+}}
+
