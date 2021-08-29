@@ -13,24 +13,22 @@
     gap: 10px;
     min-width: 300px;
     max-width: 350px;
-<<<<<<< HEAD:CSS/style.css
 
-=======
->>>>>>> John:style.css
 }
 
 
 .sumar, .dividir, .multiplicar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin: auto;
-<<<<<<< HEAD:CSS/style.css
 
-=======
->>>>>>> John:style.css
 }
 
 .operacion{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin: auto;
@@ -59,7 +57,6 @@
 
 /*Creando estilo para desktop*/
 
-<<<<<<< HEAD:CSS/style.css
 @media (min-width:600px) {
  .main{
     max-width: 60%;
@@ -68,10 +65,8 @@
 /* .main{
     background-color: aqua;
 } */
-=======
 @media(min-width:600px){
     .main{
         width: 70%;
     }
 }
->>>>>>> John:style.css
